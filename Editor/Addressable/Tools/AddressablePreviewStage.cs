@@ -80,7 +80,7 @@ namespace ThunderKit.Addressable.Tools
 
         void SetRecursiveFlags(Transform transform)
         {
-            transform.gameObject.hideFlags = HideFlags.DontSave | HideFlags.NotEditable;
+            transform.gameObject.hideFlags = HideFlags.DontSave;
             for (int i = 0; i < transform.childCount; i++)
                 SetRecursiveFlags(transform.GetChild(i));
         }
